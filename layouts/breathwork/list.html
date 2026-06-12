@@ -8,6 +8,19 @@
 
 <div class="post-grid">
   {{ range (hugo.Data).breathwork.items }}
+  {{ if .audio_alpha }}
+  <div class="card {{ .gradient }} has-audio" data-audio-alpha="{{ .audio_alpha }}" data-audio-ticks="{{ .audio_ticks }}">
+    <div class="card-play-overlay">
+      <svg class="play-icon" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg>
+      <svg class="pause-icon" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" style="display:none"><rect x="3" y="2" width="3" height="12"/><rect x="10" y="2" width="3" height="12"/></svg>
+    </div>
+    <div class="card-info">
+      <span class="card-tag">{{ .tag }}</span>
+      <h3>{{ .title }}</h3>
+      <p>{{ .desc }}</p>
+    </div>
+  </div>
+  {{ else }}
   <div class="card {{ .gradient }}{{ if .soon }} soon{{ end }}">
     <div class="card-info">
       <span class="card-tag">{{ .tag }}</span>
@@ -15,6 +28,7 @@
       <p>{{ .desc }}</p>
     </div>
   </div>
+  {{ end }}
   {{ end }}
 </div>
 

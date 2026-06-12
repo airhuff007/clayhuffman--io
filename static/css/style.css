@@ -84,6 +84,35 @@ footer{padding:3rem 4%;border-top:1px solid var(--border);display:flex;flex-wrap
 .social-row a:hover{color:var(--accent)}
 .copyright{font-size:.75rem;color:var(--ink-dim);width:100%;text-align:center}
 
+/* WAVEFORM PLAYING STATE */
+@keyframes bar-pulse{
+  0%,100%{transform:scaleY(.35);opacity:.45}
+  50%{transform:scaleY(1);opacity:.85}
+}
+.waveform.playing{animation:none}
+.waveform.playing span{transform-origin:bottom}
+
+/* HERO PLAYING BUTTON */
+.btn-playing{background:var(--ink)!important;color:#0a0a0a!important}
+
+/* CARD AUDIO OVERLAY */
+.card.has-audio{cursor:pointer}
+.card-play-overlay{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  transition:opacity .25s;
+  background:rgba(0,0,0,.35);
+  z-index:1;
+  color:#fff;
+}
+.card.has-audio:hover .card-play-overlay{opacity:1}
+.card.has-audio.card-active .card-play-overlay{opacity:1;background:rgba(0,0,0,.55)}
+.card-play-overlay svg{filter:drop-shadow(0 0 6px rgba(224,134,47,.6));width:28px;height:28px}
+
 /* PAGE HEADER */
 .page-header{padding:8rem 4% 3rem;border-bottom:1px solid var(--border)}
 .page-header-label{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);margin-bottom:.75rem}

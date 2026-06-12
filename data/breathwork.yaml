@@ -9,17 +9,23 @@ items:
     desc: "20 min · Guided breathing rounds, the way I actually do them."
     gradient: g2
   - tag: Technique
+    title: 4-in-6-out Breathing
+    desc: "5 min · Inhale 4 seconds, exhale 6. Calming and grounding."
+    gradient: g3
+    audio_alpha: /audio/4in6out-alpha.mp3
+    audio_ticks: /audio/4in6out-ticks.mp3
+  - tag: Technique
     title: Box Breathing
     desc: "10 min · Recording soon."
-    gradient: g3
+    gradient: g4
     soon: true
   - tag: Technique
     title: 4-7-8 Breathing
     desc: "8 min · Recording soon."
-    gradient: g4
+    gradient: g1
     soon: true
   - tag: Technique
     title: Fibonacci Breathing
     desc: "15 min · Recording soon."
-    gradient: g1
+    gradient: g2
     soon: true
