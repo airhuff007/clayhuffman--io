@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<div class="page-header">
+  <span class="page-header-label">Writing</span>
+  <h1>The Blog</h1>
+  <p>Builder's notes, philosophy, health, and whatever's worth saying out loud.</p>
+</div>
+
+<div class="post-grid">
+  {{ $gradients := slice "g2" "g3" "g4" "g1" "g2" "g3" "g4" "g1" "g2" "g3" }}
+  {{ range $i, $post := .Pages }}
+  <a href="{{ $post.RelPermalink }}" class="card {{ index $gradients $i }}">
+    <div class="card-info">
+      <span class="card-tag">{{ $post.Params.category }}</span>
+      <h3>{{ $post.Title }}</h3>
+      <p>{{ $post.Params.description }}</p>
+    </div>
+  </a>
+  {{ end }}
+</div>
+
+{{ end }}

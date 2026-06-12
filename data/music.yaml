@@ -1,0 +1,13 @@
+items:
+  - title: First Track
+    desc: "Coming soon."
+    gradient: g3
+    soon: true
+  - title: "EP, Vol. 1"
+    desc: "Coming soon."
+    gradient: g4
+    soon: true
+  - title: Live Sessions
+    desc: "Coming soon."
+    gradient: g1
+    soon: true

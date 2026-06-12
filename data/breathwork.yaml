@@ -1,0 +1,25 @@
+view_all_url: /breathwork/
+items:
+  - tag: Original
+    title: Drive Session — Tick + Ambient
+    desc: "4 hours · One tick per second, EQ'd by hand and layered with ambient music."
+    gradient: g1
+  - tag: Technique
+    title: Wim Hof Method
+    desc: "20 min · Guided breathing rounds, the way I actually do them."
+    gradient: g2
+  - tag: Technique
+    title: Box Breathing
+    desc: "10 min · Recording soon."
+    gradient: g3
+    soon: true
+  - tag: Technique
+    title: 4-7-8 Breathing
+    desc: "8 min · Recording soon."
+    gradient: g4
+    soon: true
+  - tag: Technique
+    title: Fibonacci Breathing
+    desc: "15 min · Recording soon."
+    gradient: g1
+    soon: true

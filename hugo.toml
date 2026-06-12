@@ -1,0 +1,8 @@
+baseURL = 'https://clayhuffman.io/'
+locale = 'en-us'
+title = 'Clay Huffman'
+
+[taxonomies]
+
+[params]
+  description = "Breathwork audio, builder's notes, and the AI systems running a one-person company. Good things take time."

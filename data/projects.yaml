@@ -1,0 +1,19 @@
+items:
+  - title: DAT Media AI
+    desc: "AI consulting and automation agency for local businesses."
+    gradient: g1
+  - title: Agent Boost Solutions
+    desc: "GoHighLevel-based SaaS package for life insurance agents."
+    gradient: g2
+  - title: The Patient Agent
+    desc: "Life insurance brand built on patience over pressure."
+    gradient: g3
+  - title: LeadRecover
+    desc: "SMS-first AI lead qualification SaaS for real estate agents."
+    gradient: g4
+  - title: The Operator Class
+    desc: "Skool community for solo operators."
+    gradient: g1
+  - title: Moments by LP
+    desc: "Photography and personal branding, run by Lauren."
+    gradient: g2

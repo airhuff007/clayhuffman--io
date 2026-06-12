@@ -1,0 +1,101 @@
+{{ define "main" }}
+
+<header class="hero">
+  <div class="waveform" id="waveform" aria-hidden="true"></div>
+  <div class="hero-content">
+    <span class="hero-label">{{ .Params.hero.label }}</span>
+    <h1>{{ .Params.hero.heading }}</h1>
+    <p>{{ .Params.hero.body }}</p>
+    <div class="hero-meta">
+      <span class="badge">{{ .Params.hero.duration }}</span>
+    </div>
+    <div class="hero-actions">
+      <a href="{{ .Params.hero.listen_url }}" class="btn btn-primary" aria-label="Listen to {{ .Params.hero.heading }}">
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2l10 6-10 6V2z"/></svg>
+        Listen
+      </a>
+      <a href="{{ .Params.hero.more_url }}" class="btn btn-ghost">More Info</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="row" id="breathwork">
+    <h2 class="row-title">Breathwork</h2>
+    <div class="row-track">
+      {{ range (hugo.Data).breathwork.items }}
+      <div class="card {{ .gradient }}{{ if .soon }} soon{{ end }}">
+        <div class="card-info">
+          <span class="card-tag">{{ .tag }}</span>
+          <h3>{{ .title }}</h3>
+          <p>{{ .desc }}</p>
+        </div>
+      </div>
+      {{ end }}
+      <a href="{{ (hugo.Data).breathwork.view_all_url }}" class="card view-all"><span>View All<br>Breathwork →</span></a>
+    </div>
+  </section>
+
+  <section class="row" id="blog">
+    <h2 class="row-title">From the Blog</h2>
+    <div class="row-track">
+      {{ $gradients := slice "g2" "g3" "g4" "g1" "g2" }}
+      {{ range $i, $post := first 5 (where .Site.RegularPages "Section" "blog") }}
+      <a href="{{ $post.RelPermalink }}" class="card {{ index $gradients $i }}">
+        <div class="card-info">
+          <span class="card-tag">{{ $post.Params.category }}</span>
+          <h3>{{ $post.Title }}</h3>
+          <p>{{ $post.Params.description }}</p>
+        </div>
+      </a>
+      {{ end }}
+      <a href="/blog/" class="card view-all"><span>View All<br>Posts →</span></a>
+    </div>
+  </section>
+
+  <section class="row" id="build">
+    <h2 class="row-title">The Build</h2>
+    <div class="row-track">
+      {{ range (hugo.Data).projects.items }}
+      <div class="card {{ .gradient }} card-build">
+        <div class="card-info">
+          <h3>{{ .title }}</h3>
+          <p>{{ .desc }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="row" id="music">
+    <h2 class="row-title">Music</h2>
+    <div class="row-track">
+      {{ range (hugo.Data).music.items }}
+      <div class="card {{ .gradient }}{{ if .soon }} soon{{ end }}">
+        <div class="card-info">
+          <h3>{{ .title }}</h3>
+          <p>{{ .desc }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="row" id="youtube">
+    <h2 class="row-title">On YouTube</h2>
+    <div class="row-track">
+      {{ range (hugo.Data).youtube.items }}
+      <div class="card {{ .gradient }}{{ if .soon }} soon{{ end }}">
+        <div class="card-info">
+          <h3>{{ .title }}</h3>
+          <p>{{ .desc }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+</main>
+
+{{ end }}

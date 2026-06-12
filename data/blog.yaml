@@ -1,0 +1,22 @@
+view_all_url: /blog/
+items:
+  - tag: Life
+    title: Why I Started Writing
+    desc: "Everything I know is in my head. That's a bad place to store it."
+    gradient: g2
+  - tag: Business
+    title: Built Lauren's Booking Automation in a Weekend
+    desc: "What it does, and what it took to ship it."
+    gradient: g3
+  - tag: Tech & Science
+    title: What JARVIS Actually Is
+    desc: "Telegram, n8n, Obsidian, and Claude, wired into one operator."
+    gradient: g4
+  - tag: Current Events
+    title: We Should All Be a Little More Amish
+    desc: "On disconnecting to build something real."
+    gradient: g1
+  - tag: Health
+    title: Nobody Told Me This at 14
+    desc: "What I wish I knew about energy and focus."
+    gradient: g2

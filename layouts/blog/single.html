@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+<div class="article-wrap">
+  <a href="/blog/" class="back-link">← Back to Blog</a>
+  <header class="article-header">
+    <span class="card-tag">{{ .Params.category }}</span>
+    <h1>{{ .Title }}</h1>
+    <div class="article-meta">{{ .Date.Format "January 2, 2006" }}</div>
+  </header>
+  <div class="article-body">
+    {{ .Content }}
+  </div>
+</div>
+
+{{ end }}

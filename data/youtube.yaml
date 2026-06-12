@@ -1,0 +1,13 @@
+items:
+  - title: Channel Trailer
+    desc: "Coming soon."
+    gradient: g2
+    soon: true
+  - title: Builder's Journey
+    desc: "Coming soon."
+    gradient: g3
+    soon: true
+  - title: AI Builds, Live
+    desc: "Coming soon."
+    gradient: g4
+    soon: true

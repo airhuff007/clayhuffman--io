@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+<div class="page-header">
+  <span class="page-header-label">Audio</span>
+  <h1>Breathwork</h1>
+  <p>Custom tick tracks, guided sessions, and breathing techniques — recorded the way I actually use them.</p>
+</div>
+
+<div class="post-grid">
+  {{ range (hugo.Data).breathwork.items }}
+  <div class="card {{ .gradient }}{{ if .soon }} soon{{ end }}">
+    <div class="card-info">
+      <span class="card-tag">{{ .tag }}</span>
+      <h3>{{ .title }}</h3>
+      <p>{{ .desc }}</p>
+    </div>
+  </div>
+  {{ end }}
+</div>
+
+{{ end }}
