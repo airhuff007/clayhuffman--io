@@ -4,9 +4,9 @@
   <img class="intro-bg" src="/images/lookingdownbass.png" alt="" aria-hidden="true">
   <div class="intro-glow" aria-hidden="true"></div>
   <div class="intro-content">
-    <span class="hero-label">VETERAN • STORYTELLER • BUILDER</span>
-    <h1>Stories, sound, and systems for a better life.</h1>
-    <p>I'm Clay. I create music, guided breathwork, and cinematic audio experiences while documenting the journey of building a life, a business, and the systems that make both possible.</p>
+    <span class="hero-label">VETERAN • SOUND ENGINEER • PRODUCER • BUILDER</span>
+    <h1>Music, sound, and the build.</h1>
+    <p>I'm Clay — sound engineer, meditation music producer, and builder. I make guided breathwork sessions, cinematic audio, and original music while studying audio engineering at SAE, running my companies, and documenting everything I learn.</p>
     <div class="hero-actions">
       <a href="#breathwork" class="btn btn-primary">Listen</a>
       <a href="/blog/" class="btn btn-ghost">Read</a>
@@ -15,35 +15,35 @@
   </div>
 </section>
 
-<header class="hero">
-  <div class="waveform" id="waveform" aria-hidden="true"></div>
-  <div class="hero-content">
-    <span class="hero-label">{{ .Params.hero.label }}</span>
-    <h1>{{ .Params.hero.heading }}</h1>
-    <p>{{ .Params.hero.body }}</p>
-    <div class="hero-meta">
-      <span class="badge">{{ .Params.hero.duration }}</span>
-    </div>
-    <div class="hero-actions">
-      <button class="btn btn-primary" id="btn-alpha" onclick="heroPlay('alpha')" aria-label="Listen with alpha wave background">
-        <svg id="icon-alpha" width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2l10 6-10 6V2z"/></svg>
-        <span id="label-alpha">Alpha Waves</span>
-      </button>
-      <button class="btn btn-ghost" id="btn-ticks" onclick="heroPlay('ticks')" aria-label="Listen with ticks only, no background music">
-        <svg id="icon-ticks" width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2l10 6-10 6V2z"/></svg>
-        <span id="label-ticks">Ticks Only</span>
-      </button>
-      <a href="{{ .Params.hero.more_url }}" class="btn btn-ghost">All Breathwork</a>
-    </div>
-  </div>
-  <audio id="hero-audio-alpha" src="{{ .Params.hero.audio_alpha }}" preload="none"></audio>
-  <audio id="hero-audio-ticks" src="{{ .Params.hero.audio_ticks }}" preload="none"></audio>
-</header>
-
 <main>
 
   <section class="row" id="breathwork">
     <h2 class="row-title">Breathwork</h2>
+    <div class="featured-technique">
+      <div class="waveform" id="waveform" aria-hidden="true"></div>
+      <div class="featured-technique-content">
+        <span class="featured-tag">FEATURED TECHNIQUE</span>
+        <span class="hero-label">{{ .Params.hero.label }}</span>
+        <h3>{{ .Params.hero.heading }}</h3>
+        <p>{{ .Params.hero.body }}</p>
+        <div class="hero-meta">
+          <span class="badge">{{ .Params.hero.duration }}</span>
+        </div>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="btn-alpha" onclick="heroPlay('alpha')" aria-label="Listen with alpha wave background">
+            <svg id="icon-alpha" width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2l10 6-10 6V2z"/></svg>
+            <span id="label-alpha">Alpha Waves</span>
+          </button>
+          <button class="btn btn-ghost" id="btn-ticks" onclick="heroPlay('ticks')" aria-label="Listen with ticks only, no background music">
+            <svg id="icon-ticks" width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 2l10 6-10 6V2z"/></svg>
+            <span id="label-ticks">Ticks Only</span>
+          </button>
+          <a href="{{ .Params.hero.more_url }}" class="btn btn-ghost">All Breathwork</a>
+        </div>
+      </div>
+      <audio id="hero-audio-alpha" src="{{ .Params.hero.audio_alpha }}" preload="none"></audio>
+      <audio id="hero-audio-ticks" src="{{ .Params.hero.audio_ticks }}" preload="none"></audio>
+    </div>
     <div class="row-track">
       {{ range (hugo.Data).breathwork.items }}
       {{ if .audio_alpha }}
