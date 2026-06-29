@@ -176,7 +176,15 @@ footer{padding:3rem 4%;border-top:1px solid var(--border);display:flex;flex-wrap
 .intro-content{position:relative;z-index:2;padding:0 4% 4.5rem;max-width:680px}
 .intro-content h1{font-family:var(--font-display);font-weight:400;font-size:clamp(2.2rem,5.5vw,3.6rem);line-height:1.15;margin-bottom:1rem}
 .intro-content p{color:var(--ink-dim);font-size:1rem;max-width:46ch;margin-bottom:2rem}
-@media(max-width:720px){.intro-section{min-height:70vh}}
+@media(max-width:720px){
+  .intro-section{min-height:auto;padding-top:52vw}
+  .intro-bg{object-position:center 38%;-webkit-mask-image:linear-gradient(to bottom,transparent 0%,black 8%,black 80%,transparent 100%);-webkit-mask-composite:initial;mask-image:linear-gradient(to bottom,transparent 0%,black 8%,black 80%,transparent 100%);mask-composite:initial}
+  .intro-section::after{background:linear-gradient(to top,rgba(10,10,10,.98) 0%,rgba(10,10,10,.75) 28%,rgba(10,10,10,.3) 55%,transparent 76%)}
+  .intro-content{padding:0 5% 2.8rem}
+  .intro-content p{font-size:.9rem;max-width:none}
+  .intro-content .hero-actions{gap:.6rem}
+  .intro-content .hero-actions .btn{font-size:.82rem;padding:.7rem 1.2rem}
+}
 
 /* MOBILE */
 @media(max-width:720px){
