@@ -167,6 +167,12 @@ footer{padding:3rem 4%;border-top:1px solid var(--border);display:flex;flex-wrap
 .not-found h1{font-family:var(--font-display);font-size:clamp(5rem,20vw,12rem);font-weight:400;color:var(--border);line-height:1;margin-bottom:1rem}
 .not-found p{color:var(--ink-dim);margin-bottom:2rem}
 
+/* PHOTO BANNERS */
+.photo-banner{position:relative;height:45vh;overflow:hidden;margin-bottom:3.5rem}
+.photo-banner img{width:100%;height:100%;object-fit:cover;display:block}
+.photo-banner::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.65) 0%,rgba(10,10,10,.15) 50%,rgba(10,10,10,.65) 100%);pointer-events:none}
+@media(max-width:720px){.photo-banner{height:35vw}}
+
 /* INTRO HERO */
 .intro-section{position:relative;overflow:hidden;display:flex;align-items:flex-end;min-height:88vh;border-bottom:1px solid var(--border)}
 .intro-section::before{content:'';position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.035;pointer-events:none;z-index:0}
