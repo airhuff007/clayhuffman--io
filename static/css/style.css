@@ -222,17 +222,6 @@ footer{padding:3rem 4%;border-top:1px solid var(--border);display:flex;flex-wrap
 .tag-chip{font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--border);padding:.3rem .6rem;border-radius:2px;color:var(--ink-dim)}
 .project-cta{align-self:flex-start;margin-top:.25rem}
 
-.recruiter-table-wrap{padding:0 4%;overflow-x:auto}
-.recruiter-table{width:100%;max-width:700px;border-collapse:collapse;font-size:.9rem}
-.recruiter-table td{padding:.85rem 1rem;border-bottom:1px solid var(--border);text-align:left}
-.recruiter-table td:first-child{color:var(--ink-dim);width:40%}
-.recruiter-table td:last-child{color:var(--ink)}
-
-.reference-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;padding:0 4%}
-.reference-card{border:1px dashed var(--border);border-radius:4px;padding:1.5rem;text-align:center;opacity:.6}
-.reference-card h4{color:var(--ink);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem}
-.reference-card p{color:var(--ink-dim);font-size:.85rem}
-
 .growth-list{list-style:none;padding:0 4%;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.5rem 2rem}
 .growth-list li{font-size:.85rem;color:var(--ink-dim);padding:.6rem 0;border-bottom:1px dashed var(--border)}
 .growth-list li strong{color:var(--ink);font-weight:600}
@@ -245,5 +234,4 @@ footer{padding:3rem 4%;border-top:1px solid var(--border);display:flex;flex-wrap
   .card{flex:0 0 220px}
   .post-grid{grid-template-columns:1fr}
   footer{justify-content:center;text-align:center}
-  .recruiter-table td:first-child{width:50%}
 }
