@@ -200,6 +200,43 @@ footer{padding:3rem 4%;border-top:1px solid var(--border);display:flex;flex-wrap
   .intro-content .hero-actions .btn{font-size:.82rem;padding:.7rem 1.2rem}
 }
 
+/* PORTFOLIO PAGE */
+.page-header .hero-actions{margin-top:1.5rem}
+.badge-row{display:flex;flex-wrap:wrap;gap:.6rem;padding:0 4% 0;margin-bottom:1rem}
+.btn-disabled{opacity:.45;cursor:not-allowed}
+
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;padding:0 4%}
+.skill-group{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:1.5rem}
+.skill-group h3{font-family:var(--font-display);font-weight:400;font-size:1.05rem;margin-bottom:.9rem}
+.skill-group ul{list-style:none}
+.skill-group li{font-size:.85rem;color:var(--ink-dim);padding:.45rem 0;border-bottom:1px solid var(--border)}
+.skill-group li:last-child{border-bottom:none}
+
+.project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.25rem;padding:0 4%}
+.project-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:1.75rem;display:flex;flex-direction:column;gap:.9rem}
+.project-card h3{font-family:var(--font-display);font-weight:400;font-size:1.2rem}
+.project-role{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent)}
+.project-card ul{list-style:none}
+.project-card li{font-size:.85rem;color:var(--ink-dim);padding:.15rem 0}
+.project-tags{display:flex;flex-wrap:wrap;gap:.5rem}
+.tag-chip{font-size:.65rem;text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--border);padding:.3rem .6rem;border-radius:2px;color:var(--ink-dim)}
+.project-cta{align-self:flex-start;margin-top:.25rem}
+
+.recruiter-table-wrap{padding:0 4%;overflow-x:auto}
+.recruiter-table{width:100%;max-width:700px;border-collapse:collapse;font-size:.9rem}
+.recruiter-table td{padding:.85rem 1rem;border-bottom:1px solid var(--border);text-align:left}
+.recruiter-table td:first-child{color:var(--ink-dim);width:40%}
+.recruiter-table td:last-child{color:var(--ink)}
+
+.reference-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;padding:0 4%}
+.reference-card{border:1px dashed var(--border);border-radius:4px;padding:1.5rem;text-align:center;opacity:.6}
+.reference-card h4{color:var(--ink);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.5rem}
+.reference-card p{color:var(--ink-dim);font-size:.85rem}
+
+.growth-list{list-style:none;padding:0 4%;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:.5rem 2rem}
+.growth-list li{font-size:.85rem;color:var(--ink-dim);padding:.6rem 0;border-bottom:1px dashed var(--border)}
+.growth-list li strong{color:var(--ink);font-weight:600}
+
 /* MOBILE */
 @media(max-width:720px){
   .nav-links{display:none}
@@ -208,4 +245,5 @@ footer{padding:3rem 4%;border-top:1px solid var(--border);display:flex;flex-wrap
   .card{flex:0 0 220px}
   .post-grid{grid-template-columns:1fr}
   footer{justify-content:center;text-align:center}
+  .recruiter-table td:first-child{width:50%}
 }
