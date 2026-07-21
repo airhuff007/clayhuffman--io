@@ -1,218 +1,344 @@
 {{ define "main" }}
 
-<div class="page-header">
-  <span class="page-header-label">Portfolio</span>
-  <h1>Audio Engineer Portfolio</h1>
-  <p>Coast Guard veteran and Audio Engineering student at SAE Institute Miami with experience in music mixing, podcast production, ADR, Foley, Pro Tools, studio recording, and audio post-production.</p>
-  <p>Currently seeking full-time studio production and audio engineering opportunities in South Florida.</p>
-  <div class="badge-row">
-    <span class="badge">Audio Engineer</span>
-    <span class="badge">Studio Production</span>
-    <span class="badge">Podcast Production</span>
-    <span class="badge">Pro Tools</span>
-  </div>
-  <div class="hero-actions">
-    <span class="btn btn-ghost btn-disabled">📄 Resume — Coming Soon</span>
-    <a href="mailto:clay@datmediamarketing.com" class="btn btn-ghost">📧 Email</a>
-    <a href="https://www.linkedin.com/in/clayhuffman/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
-  </div>
-</div>
-
-<section class="row">
-  <h2 class="row-title">Technical Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-group">
-      <h3>Audio</h3>
-      <ul>
-        <li>Pro Tools</li>
-        <li>Music Mixing</li>
-        <li>Podcast Editing</li>
-        <li>ADR</li>
-        <li>Foley</li>
-        <li>Signal Processing</li>
-        <li>Gain Staging</li>
-        <li>Studio Recording</li>
-        <li>Audio Post Production</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <h3>Studio</h3>
-      <ul>
-        <li>SSL Console</li>
-        <li>Signal Flow</li>
-        <li>Microphone Placement</li>
-        <li>Patchbay Routing</li>
-        <li>Session Setup</li>
-        <li>Media Management</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <h3>Production</h3>
-      <ul>
-        <li>OBS</li>
-        <li>Camera Operation</li>
-        <li>Basic Studio Lighting</li>
-        <li>Multi-Episode Podcast Production</li>
-        <li>YouTube Delivery</li>
-      </ul>
+<!-- ── HERO ──────────────────────────────────────────────── -->
+<section class="pf-hero">
+  <div class="pf-hero-waveform" id="pf-waveform" aria-hidden="true"></div>
+  <div class="pf-hero-glow" aria-hidden="true"></div>
+  <div class="pf-hero-content">
+    <span class="hero-label">Audio Engineer &nbsp;·&nbsp; Producer &nbsp;·&nbsp; U.S. Coast Guard Veteran</span>
+    <h1>Clay Huffman</h1>
+    <p>Live sound, music mixing, podcast production, voiceover, and post-production.
+       SAE Institute Miami audio engineering student with hands-on experience across
+       studio, broadcast, and live environments.</p>
+    <div class="hero-actions">
+      <a href="/Clay_Huffman_Resume.pdf" target="_blank" class="btn btn-primary">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 12l-4-4h2.5V2h3v6H12L8 12zM2 14h12v-1.5H2V14z"/></svg>
+        Download Resume
+      </a>
+      <a href="mailto:clay@datmediamarketing.com" class="btn btn-ghost">Get in Touch</a>
+      <a href="/" class="btn btn-ghost">Main Site</a>
     </div>
   </div>
 </section>
 
-<section class="row">
-  <h2 class="row-title">Featured Projects</h2>
-  <div class="project-grid">
+<main class="pf-main">
 
-    <div class="project-card">
-      <h3>🎙️ Eight-Episode Podcast</h3>
-      <span class="project-role">Producer • Audio Engineer • Editor</span>
-      <ul>
-        <li>Camera setup</li>
-        <li>OBS recording</li>
-        <li>Microphone setup</li>
-        <li>Live monitoring</li>
-        <li>Audio editing</li>
-        <li>Video editing</li>
-        <li>Publishing</li>
-      </ul>
-      <div class="project-tags">
-        <span class="tag-chip">Pro Tools</span>
-        <span class="tag-chip">OBS</span>
-        <span class="tag-chip">Camera</span>
-        <span class="tag-chip">Microphones</span>
+  <!-- ── PROJECTS ──────────────────────────────────────────── -->
+  <section class="row" id="projects">
+    <h2 class="row-title">Projects</h2>
+    <div class="row-track">
+
+      <!-- Breaking Bad ADR/Foley -->
+      <div class="card g3 pf-card">
+        <div class="card-info">
+          <span class="card-tag">Audio Post · Pro Tools</span>
+          <h3>Breaking Bad ADR &amp; Foley</h3>
+          <p>Recorded and synchronized ADR, Foley, SFX, automation, and final mix for an SAE audio-post production assignment.</p>
+        </div>
       </div>
-      <a href="#" class="btn btn-ghost project-cta">🎥 Watch Project</a>
-    </div>
 
-    <div class="project-card">
-      <h3>🥊 UFC Podcast</h3>
-      <span class="project-role">Podcast Editor</span>
-      <ul>
-        <li>Dialogue editing</li>
-        <li>Audio cleanup</li>
-        <li>Level balancing</li>
-        <li>Final delivery</li>
-      </ul>
-      <a href="#" class="btn btn-ghost project-cta">🎥 Watch Project</a>
-    </div>
+      <!-- Multitrack Mixing -->
+      <div class="card g1 pf-card">
+        <div class="card-info">
+          <span class="card-tag">Music Mixing · Pro Tools</span>
+          <h3>Multitrack Session Mix</h3>
+          <p>Full multitrack mix using EQ, compression, automation, spatial placement, and bus routing in Pro Tools.</p>
+        </div>
+        <!-- TO ADD: data-audio="/audio/multitrack-mix.mp3" on the .card element, then the play overlay below will activate -->
+      </div>
 
-    <div class="project-card">
-      <h3>🎧 Ocean Eyes</h3>
-      <span class="project-role">Signal Processing Mix</span>
-      <ul>
-        <li>EQ</li>
-        <li>Compression</li>
-        <li>Automation</li>
-        <li>Reverb</li>
-        <li>Delay</li>
-      </ul>
-      <a href="#" class="btn btn-ghost project-cta">🎵 Listen to Mix</a>
-    </div>
+      <!-- Journey Church Live Sound -->
+      <div class="card g2 pf-card">
+        <div class="card-info">
+          <span class="card-tag">Live Sound · 26-Input Console</span>
+          <h3>Journey Church Live Mix</h3>
+          <p>Weekly live production for a five-piece band — multichannel digital console, monitor mixes, gain structure, and real-time troubleshooting.</p>
+        </div>
+      </div>
 
-    <div class="project-card">
-      <h3>🎬 Breaking Bad ADR</h3>
-      <span class="project-role">ADR • Foley • Mix</span>
-      <ul>
-        <li>Dialogue replacement</li>
-        <li>Foley recording</li>
-        <li>Sound design</li>
-        <li>Final mix</li>
-      </ul>
-      <a href="#" class="btn btn-ghost project-cta">🎥 Watch Scene</a>
-    </div>
+      <!-- DAT Media -->
+      <div class="card g4 pf-card">
+        <div class="card-info">
+          <span class="card-tag">Production · DAT Media</span>
+          <h3>Client Video Productions</h3>
+          <p>End-to-end video, interview, and event-content productions — from field recording and camera operation through final edit and delivery.</p>
+        </div>
+      </div>
 
-    <div class="project-card">
-      <h3>🎤 SAE Podcast</h3>
-      <span class="project-role">Podcast Editor</span>
-      <ul>
-        <li>Dialogue editing</li>
-        <li>Session organization</li>
-        <li>Final delivery</li>
-      </ul>
-      <a href="#" class="btn btn-ghost project-cta">🎧 Listen</a>
-    </div>
+      <!-- Add More -->
+      <div class="card g3 pf-card soon">
+        <div class="card-info">
+          <span class="card-tag">Coming Soon</span>
+          <h3>More Projects</h3>
+          <p>Additional productions in progress.</p>
+        </div>
+      </div>
 
+    </div>
+  </section>
+
+  <!-- ── PODCAST CREDITS ───────────────────────────────────── -->
+  <section class="row" id="podcasts">
+    <h2 class="row-title">Podcast Credits</h2>
+    <div class="row-track">
+
+      <!-- Fighting Yo! -->
+      <div class="card g2 pf-card pf-link-card" data-href="https://www.youtube.com/@FightingYo" data-label="YouTube">
+        <div class="pf-link-badge">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM6.5 5.5l5 2.5-5 2.5V5.5z"/></svg>
+          Watch on YouTube
+        </div>
+        <div class="card-info">
+          <span class="card-tag">Producer · Camera · Editor</span>
+          <h3>The Third Street Savage Ryan Kuse</h3>
+          <p>Fighting Yo! — combat sports YouTube channel, 30K+ subscribers. Camera, OBS recording, dialogue clean-up, and final delivery.</p>
+        </div>
+      </div>
+
+      <!-- Placeholder 2 -->
+      <div class="card g3 pf-card soon">
+        <div class="card-info">
+          <span class="card-tag">Podcast</span>
+          <h3>Your Podcast Here</h3>
+          <p>Add a SoundCloud or YouTube link to showcase your podcast work.</p>
+        </div>
+      </div>
+
+      <!-- Placeholder 3 -->
+      <div class="card g1 pf-card soon">
+        <div class="card-info">
+          <span class="card-tag">Podcast</span>
+          <h3>Your Podcast Here</h3>
+          <p>Add a SoundCloud or YouTube link to showcase your podcast work.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── SONGS MIXED ───────────────────────────────────────── -->
+  <section class="row" id="songs">
+    <h2 class="row-title">Songs Mixed</h2>
+    <p class="row-sub">Click a card to play a preview.</p>
+    <div class="row-track">
+
+      <!-- Song 1 — replace data-audio with your actual mp3 path, e.g. /audio/song-title.mp3 -->
+      <div class="card g3 pf-card pf-audio-card" data-audio="">
+        <div class="pf-play-btn" aria-label="Play">
+          <svg class="pf-icon-play" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="pf-icon-pause" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" style="display:none"><rect x="3" y="2" width="3" height="12"/><rect x="10" y="2" width="3" height="12"/></svg>
+        </div>
+        <div class="pf-progress-wrap"><div class="pf-progress-bar"></div></div>
+        <div class="card-info">
+          <span class="card-tag">Mix · Pro Tools</span>
+          <h3>Song Title</h3>
+          <p>Add your MP3 path to the data-audio attribute on this card.</p>
+        </div>
+      </div>
+
+      <!-- Song 2 -->
+      <div class="card g1 pf-card pf-audio-card" data-audio="">
+        <div class="pf-play-btn" aria-label="Play">
+          <svg class="pf-icon-play" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="pf-icon-pause" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" style="display:none"><rect x="3" y="2" width="3" height="12"/><rect x="10" y="2" width="3" height="12"/></svg>
+        </div>
+        <div class="pf-progress-wrap"><div class="pf-progress-bar"></div></div>
+        <div class="card-info">
+          <span class="card-tag">Mix · Pro Tools</span>
+          <h3>Song Title</h3>
+          <p>Add your MP3 path to the data-audio attribute on this card.</p>
+        </div>
+      </div>
+
+      <!-- Song 3 -->
+      <div class="card g4 pf-card pf-audio-card" data-audio="">
+        <div class="pf-play-btn" aria-label="Play">
+          <svg class="pf-icon-play" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="pf-icon-pause" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" style="display:none"><rect x="3" y="2" width="3" height="12"/><rect x="10" y="2" width="3" height="12"/></svg>
+        </div>
+        <div class="pf-progress-wrap"><div class="pf-progress-bar"></div></div>
+        <div class="card-info">
+          <span class="card-tag">Mix · Pro Tools</span>
+          <h3>Song Title</h3>
+          <p>Add your MP3 path to the data-audio attribute on this card.</p>
+        </div>
+      </div>
+
+      <!-- Song 4 -->
+      <div class="card g2 pf-card pf-audio-card" data-audio="">
+        <div class="pf-play-btn" aria-label="Play">
+          <svg class="pf-icon-play" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="pf-icon-pause" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" style="display:none"><rect x="3" y="2" width="3" height="12"/><rect x="10" y="2" width="3" height="12"/></svg>
+        </div>
+        <div class="pf-progress-wrap"><div class="pf-progress-bar"></div></div>
+        <div class="card-info">
+          <span class="card-tag">Mix · Pro Tools</span>
+          <h3>Song Title</h3>
+          <p>Add your MP3 path to the data-audio attribute on this card.</p>
+        </div>
+      </div>
+
+      <!-- SoundCloud card -->
+      <div class="card g3 pf-card pf-link-card" data-href="https://soundcloud.com/" data-label="SoundCloud">
+        <div class="pf-link-badge">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M1 9.5C1 11.43 2.57 13 4.5 13h8c1.66 0 3-1.34 3-3a3 3 0 0 0-2.6-2.98A4 4 0 0 0 5 7.57 2.5 2.5 0 0 0 1 9.5z"/></svg>
+          Listen on SoundCloud
+        </div>
+        <div class="card-info">
+          <span class="card-tag">SoundCloud</span>
+          <h3>Full Mixes</h3>
+          <p>Replace the data-href with your SoundCloud profile or track link.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── VOICEOVERS ────────────────────────────────────────── -->
+  <section class="row" id="voiceovers">
+    <h2 class="row-title">Voiceovers</h2>
+    <p class="row-sub">Click a card to play a preview.</p>
+    <div class="row-track">
+
+      <!-- VO 1 -->
+      <div class="card g1 pf-card pf-audio-card" data-audio="">
+        <div class="pf-play-btn" aria-label="Play">
+          <svg class="pf-icon-play" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="pf-icon-pause" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" style="display:none"><rect x="3" y="2" width="3" height="12"/><rect x="10" y="2" width="3" height="12"/></svg>
+        </div>
+        <div class="pf-progress-wrap"><div class="pf-progress-bar"></div></div>
+        <div class="card-info">
+          <span class="card-tag">Voiceover</span>
+          <h3>VO Sample</h3>
+          <p>Add your MP3 path to the data-audio attribute on this card.</p>
+        </div>
+      </div>
+
+      <!-- VO 2 -->
+      <div class="card g4 pf-card pf-audio-card" data-audio="">
+        <div class="pf-play-btn" aria-label="Play">
+          <svg class="pf-icon-play" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="pf-icon-pause" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" style="display:none"><rect x="3" y="2" width="3" height="12"/><rect x="10" y="2" width="3" height="12"/></svg>
+        </div>
+        <div class="pf-progress-wrap"><div class="pf-progress-bar"></div></div>
+        <div class="card-info">
+          <span class="card-tag">Voiceover</span>
+          <h3>VO Sample</h3>
+          <p>Add your MP3 path to the data-audio attribute on this card.</p>
+        </div>
+      </div>
+
+      <!-- VO 3 -->
+      <div class="card g2 pf-card pf-audio-card" data-audio="">
+        <div class="pf-play-btn" aria-label="Play">
+          <svg class="pf-icon-play" width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M4 2l10 6-10 6V2z"/></svg>
+          <svg class="pf-icon-pause" width="22" height="22" viewBox="0 0 16 16" fill="currentColor" style="display:none"><rect x="3" y="2" width="3" height="12"/><rect x="10" y="2" width="3" height="12"/></svg>
+        </div>
+        <div class="pf-progress-wrap"><div class="pf-progress-bar"></div></div>
+        <div class="card-info">
+          <span class="card-tag">Voiceover</span>
+          <h3>VO Sample</h3>
+          <p>Add your MP3 path to the data-audio attribute on this card.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── SKILLS ────────────────────────────────────────────── -->
+  <section class="pf-skills" id="skills">
+    <h2 class="row-title">Skills &amp; Tools</h2>
+    <div class="pf-skills-grid">
+
+      <div class="pf-skill-group">
+        <h3 class="pf-skill-heading">DAWs</h3>
+        <ul class="pf-skill-list">
+          <li>Pro Tools</li>
+          <li>Logic Pro</li>
+          <li>Ableton Live</li>
+        </ul>
+      </div>
+
+      <div class="pf-skill-group">
+        <h3 class="pf-skill-heading">Audio</h3>
+        <ul class="pf-skill-list">
+          <li>Live Sound Mixing</li>
+          <li>Signal Flow &amp; Gain Staging</li>
+          <li>Microphone Setup &amp; Placement</li>
+          <li>Field Recording</li>
+          <li>Dialogue Editing</li>
+          <li>ADR &amp; Foley</li>
+          <li>Patchbays &amp; Routing</li>
+          <li>Monitor Mixes</li>
+          <li>EQ, Compression &amp; Automation</li>
+        </ul>
+      </div>
+
+      <div class="pf-skill-group">
+        <h3 class="pf-skill-heading">Video &amp; Media</h3>
+        <ul class="pf-skill-list">
+          <li>DaVinci Resolve</li>
+          <li>OBS Studio</li>
+          <li>CapCut</li>
+          <li>Adobe Lightroom</li>
+          <li>Fujifilm X-H2</li>
+          <li>DJI Osmo Pocket 3</li>
+          <li>Zoom H6 Field Recorder</li>
+          <li>Camera Operations</li>
+        </ul>
+      </div>
+
+      <div class="pf-skill-group">
+        <h3 class="pf-skill-heading">Production</h3>
+        <ul class="pf-skill-list">
+          <li>Broadcast &amp; Live Event Audio</li>
+          <li>Podcast Production</li>
+          <li>Content Delivery &amp; QC</li>
+          <li>Technical Troubleshooting</li>
+          <li>Client Coordination</li>
+          <li>U.S. Coast Guard — EM2</li>
+          <li>CompTIA A+</li>
+          <li>Lean Six Sigma Green Belt</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ─────────────────────────────────────────── -->
+  <section class="pf-education" id="education">
+    <h2 class="row-title">Education</h2>
+    <div class="pf-edu-grid">
+      <div class="pf-edu-card">
+        <span class="pf-edu-year">2025 – 2026</span>
+        <h3>Audio Engineering Diploma</h3>
+        <p>SAE Institute Miami</p>
+        <p class="pf-edu-detail">Live Sound &amp; Lighting · Signal Processing · Audio Post-Production · Studio Recording · Pro Tools · ADR · Foley · Microphone Techniques · Console Signal Flow</p>
+      </div>
+      <div class="pf-edu-card">
+        <span class="pf-edu-year">2019 – 2025</span>
+        <h3>B.S. Business Analytics</h3>
+        <p>American Military University</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── CONTACT ───────────────────────────────────────────── -->
+<section class="pf-contact" id="contact">
+  <div class="pf-contact-inner">
+    <span class="hero-label">Let's Work Together</span>
+    <h2>Ready to bring your audio to life.</h2>
+    <p>Available for studio sessions, live events, podcast production, voiceover, and post-production work.</p>
+    <div class="hero-actions">
+      <a href="mailto:clay@datmediamarketing.com" class="btn btn-primary">clay@datmediamarketing.com</a>
+      <a href="/Clay_Huffman_Resume.pdf" target="_blank" class="btn btn-ghost">Download Resume</a>
+      <a href="https://www.linkedin.com/in/clayhuffman/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+    </div>
   </div>
 </section>
 
-<section class="row">
-  <h2 class="row-title">Certifications</h2>
-  <div class="badge-row">
-    <span class="badge">Pro Tools Certified</span>
-    <span class="badge">DANTES Certification</span>
-    <span class="badge">Coast Guard Veteran</span>
-    <span class="badge">SAE Institute Miami (Current)</span>
-  </div>
-</section>
-
-<section class="row">
-  <h2 class="row-title">Studio Experience</h2>
-  <div class="badge-row">
-    <span class="badge">Signal Flow</span>
-    <span class="badge">SSL Console</span>
-    <span class="badge">Multitrack Recording</span>
-    <span class="badge">Mixing</span>
-    <span class="badge">Audio Editing</span>
-    <span class="badge">Podcast Production</span>
-    <span class="badge">Music Production</span>
-    <span class="badge">Audio Post</span>
-  </div>
-</section>
-
-<section class="row">
-  <h2 class="row-title">Equipment</h2>
-  <div class="skills-grid">
-    <div class="skill-group">
-      <h3>Audio</h3>
-      <ul>
-        <li>RØDE NT1</li>
-        <li>SM57</li>
-        <li>Sennheiser MKE600</li>
-        <li>Zoom H6</li>
-        <li>UA Volt 276</li>
-        <li>Apogee BOOM</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <h3>Video</h3>
-      <ul>
-        <li>Fujifilm X-H2</li>
-        <li>DJI Pocket 3</li>
-      </ul>
-    </div>
-    <div class="skill-group">
-      <h3>Software</h3>
-      <ul>
-        <li>Pro Tools</li>
-        <li>DaVinci Resolve</li>
-        <li>OBS</li>
-        <li>CapCut</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="row" id="portfolio-contact">
-  <h2 class="row-title">Contact</h2>
-  <ul class="about-social">
-    <li><a href="mailto:clay@datmediamarketing.com">Email</a></li>
-    <li><a href="https://www.linkedin.com/in/clayhuffman/" target="_blank" rel="noopener">LinkedIn</a></li>
-  </ul>
-</section>
-
-<section class="row">
-  <h2 class="row-title">Growing This Portfolio</h2>
-  <ul class="growth-list">
-    <li><strong>Professional Experience</strong> — Placeholder for future roles</li>
-    <li><strong>Studio Credits</strong> — Placeholder for commercial projects</li>
-    <li><strong>Music Credits</strong> — Albums, singles, artists</li>
-    <li><strong>Film &amp; TV Credits</strong> — ADR, Foley, post-production</li>
-    <li><strong>Podcast Clients</strong> — Logos or names as permission allows</li>
-    <li><strong>Testimonials</strong> — Client / instructor quotes</li>
-    <li><strong>Awards &amp; Recognition</strong> — Future</li>
-    <li><strong>Availability Calendar</strong></li>
-    <li><strong>Current Demo Reel</strong></li>
-  </ul>
-</section>
+<script src="/js/portfolio.js"></script>
 
 {{ end }}

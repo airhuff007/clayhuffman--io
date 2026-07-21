@@ -1,4 +1,4 @@
 ---
-title: "Audio Engineer Portfolio"
-description: "Audio engineer, podcast producer, and Pro Tools operator based in South Florida — music mixing, ADR, Foley, studio recording, and audio post-production."
+title: "Audio Engineer Portfolio — Clay Huffman"
+description: "Audio engineering, live sound, podcast production, music mixing, and voiceover work by Clay Huffman."
 ---
