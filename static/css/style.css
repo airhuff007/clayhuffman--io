@@ -296,6 +296,72 @@ footer{padding:3rem 4%;border-top:1px solid var(--border);display:flex;flex-wrap
 .growth-list li{font-size:.85rem;color:var(--ink-dim);padding:.6rem 0;border-bottom:1px dashed var(--border)}
 .growth-list li strong{color:var(--ink);font-weight:600}
 
+/* HERO VERSE */
+.hero-verse{margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(224,134,47,.15);font-family:var(--font-display);font-style:italic;font-size:.9rem;line-height:1.7;color:var(--ink-dim);max-width:46ch}
+.verse-ref{display:block;margin-top:.5rem;font-size:.8rem;color:var(--accent);font-style:normal;letter-spacing:.04em}
+
+/* PROBLEM SECTION */
+.problem-section{padding:5rem 4%;max-width:900px;margin:0 auto;border-bottom:1px solid var(--border)}
+.problem-content h2{font-family:var(--font-display);font-weight:400;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.25;margin-bottom:1.5rem}
+.problem-intro{font-size:1.05rem;color:var(--ink-dim);line-height:1.75;margin-bottom:2.5rem;max-width:68ch}
+.problem-list{list-style:none;display:flex;flex-direction:column;gap:1.5rem}
+.problem-list li{display:flex;gap:1rem;align-items:flex-start}
+.problem-icon{flex-shrink:0;color:var(--accent);margin-top:.15rem}
+.problem-list li div{flex:1}
+.problem-list strong{display:block;color:var(--ink);font-size:.95rem;margin-bottom:.25rem}
+.problem-list span{color:var(--ink-dim);font-size:.85rem;line-height:1.6}
+
+/* CAPABILITIES SECTION */
+.capabilities-section{padding:5rem 4%;border-bottom:1px solid var(--border)}
+.section-title{font-family:var(--font-display);font-weight:400;font-size:1.8rem;text-align:center;margin-bottom:3rem}
+.capabilities-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1200px;margin:0 auto}
+.capability-card{background:var(--surface);border:1px solid var(--border);border-radius:4px;padding:2rem;transition:border-color .3s,transform .3s}
+.capability-card:hover{border-color:var(--accent);transform:translateY(-4px)}
+.capability-icon{margin-bottom:1.25rem;color:var(--accent)}
+.capability-card h3{font-family:var(--font-display);font-weight:400;font-size:1.15rem;margin-bottom:.75rem;line-height:1.3}
+.capability-card p{font-size:.85rem;color:var(--ink-dim);line-height:1.7}
+
+/* PROJECT CARD ENHANCEMENTS */
+.project-card-enhanced .card-tools{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.5rem}
+.tool-badge{font-size:.6rem;text-transform:uppercase;letter-spacing:.08em;padding:.2rem .5rem;background:rgba(224,134,47,.12);border:1px solid rgba(224,134,47,.3);border-radius:2px;color:var(--accent)}
+
+/* CASE STUDY SECTION */
+.case-study-section{padding:5rem 4%;max-width:1100px;margin:0 auto;border-bottom:1px solid var(--border)}
+.case-study-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);margin-bottom:.75rem}
+.case-study-title{font-family:var(--font-display);font-weight:400;font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:2.5rem;line-height:1.2}
+.case-study-content{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+.case-study-text{display:flex;flex-direction:column;gap:2rem}
+.case-study-text h3{font-family:var(--font-display);font-weight:400;font-size:1.2rem;margin-bottom:.75rem;color:var(--accent)}
+.case-study-text p{font-size:.9rem;color:var(--ink-dim);line-height:1.75}
+.case-study-status{padding-top:1.5rem;border-top:1px solid var(--border)}
+.status-badge{display:inline-block;font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;padding:.35rem .8rem;border-radius:2px;margin-bottom:.75rem}
+.status-active{background:rgba(224,134,47,.15);color:var(--accent);border:1px solid var(--accent)}
+.case-study-note{font-size:.85rem;color:var(--ink-dim);line-height:1.6}
+.case-study-visual{background:var(--surface);border:1px solid var(--border);border-radius:4px;min-height:400px;display:flex;align-items:center;justify-content:center}
+.case-study-placeholder{display:flex;flex-direction:column;align-items:center;gap:1rem;color:var(--ink-dim);text-align:center;padding:2rem}
+.case-study-placeholder svg{opacity:.3}
+.case-study-placeholder span{font-size:.85rem;max-width:24ch}
+
+/* AUTHORITY SECTION */
+.authority-section{padding:5rem 4%;max-width:1000px;margin:0 auto;border-bottom:1px solid var(--border);text-align:center}
+.authority-section h2{font-family:var(--font-display);font-weight:400;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1.5rem;line-height:1.25}
+.authority-intro{font-size:1rem;color:var(--ink-dim);line-height:1.75;margin-bottom:3rem;max-width:70ch;margin-left:auto;margin-right:auto}
+.credentials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.25rem;text-align:left}
+.credential-item{background:var(--surface);border:1px solid var(--border);border-radius:3px;padding:1.25rem;display:flex;flex-direction:column;gap:.4rem}
+.credential-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent)}
+.credential-value{font-size:.9rem;color:var(--ink);line-height:1.4}
+
+/* STORY SECTION */
+.story-section{padding:5rem 4%;max-width:720px;margin:0 auto;border-bottom:1px solid var(--border)}
+.story-content h2{font-family:var(--font-display);font-weight:400;font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:1.5rem;line-height:1.25}
+.story-content p{font-size:.95rem;color:var(--ink-dim);line-height:1.8;margin-bottom:1.25rem;max-width:64ch}
+
+/* FINAL CTA SECTION */
+.final-cta-section{padding:6rem 4%;text-align:center;border-bottom:1px solid var(--border);background:radial-gradient(ellipse at 50% 50%,rgba(28,20,9,.4),var(--bg) 70%)}
+.final-cta-content{max-width:680px;margin:0 auto}
+.final-cta-content h2{font-family:var(--font-display);font-weight:400;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.25;margin-bottom:1.25rem}
+.final-cta-content p{font-size:1rem;color:var(--ink-dim);line-height:1.75;margin-bottom:2rem;max-width:58ch;margin-left:auto;margin-right:auto}
+
 /* MOBILE */
 @media(max-width:720px){
   .nav-links{display:none}
@@ -304,4 +370,17 @@ footer{padding:3rem 4%;border-top:1px solid var(--border);display:flex;flex-wrap
   .card{flex:0 0 220px}
   .post-grid{grid-template-columns:1fr}
   footer{justify-content:center;text-align:center}
+  .hero-verse{font-size:.85rem;margin-top:2rem;padding-top:1.5rem}
+  .problem-section{padding:3.5rem 5%}
+  .problem-content h2{font-size:1.6rem}
+  .problem-list{gap:1.25rem}
+  .capabilities-section{padding:3.5rem 5%}
+  .capabilities-grid{grid-template-columns:1fr;gap:1rem}
+  .case-study-section{padding:3.5rem 5%}
+  .case-study-content{grid-template-columns:1fr;gap:2rem}
+  .case-study-visual{min-height:280px}
+  .authority-section{padding:3.5rem 5%}
+  .credentials-grid{grid-template-columns:1fr 1fr;gap:1rem}
+  .story-section{padding:3.5rem 5%}
+  .final-cta-section{padding:4rem 5%}
 }

@@ -7,7 +7,7 @@
 </div>
 
 <div class="post-grid">
-  {{ range (hugo.Data).breathwork.items }}
+  {{ range .Site.Data.breathwork.items }}
   {{ if .audio_alpha }}
   <div class="card {{ .gradient }} has-audio" data-audio-alpha="{{ .audio_alpha }}" data-audio-ticks="{{ .audio_ticks }}">
     <div class="card-play-overlay">
