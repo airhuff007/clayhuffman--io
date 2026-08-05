@@ -1,0 +1,179 @@
+items:
+  # Featured Systems
+  - title: Lauren and Clay Venture OS
+    category: Operating System
+    description: "Complete operational system for managing our joint ventures, client work, content pipeline, and business operations."
+    status: Active Build
+    tools: [Notion, n8n, GoHighLevel, Telegram, Google Calendar]
+    gradient: g1
+    featured: true
+
+  - title: Moments by LP Client Operations
+    category: CRM System
+    description: "Client intake, project tracking, delivery, and retention system for Lauren's photography and personal branding business."
+    status: Active Build
+    tools: [GoHighLevel, n8n, Telegram, Google Calendar, AI Agents]
+    gradient: g2
+    featured: true
+
+  - title: Agent Boost Solutions
+    category: Business Build
+    description: "GoHighLevel-based SaaS package designed specifically for life insurance agents—CRM, workflows, and automation."
+    status: Implemented
+    tools: [GoHighLevel, n8n, APIs]
+    gradient: g3
+    featured: true
+
+  - title: JARVIS Personal Operator
+    category: AI Experiment
+    description: "Personal AI operator connecting calendar, email, Telegram, task management, and automated daily briefings."
+    status: Prototype
+    tools: [n8n, OpenAI, Telegram, Google Calendar, Gmail]
+    gradient: g4
+    featured: true
+
+  # Business Builds
+  - title: DAT Media Marketing
+    category: Business Build
+    description: "AI consulting and automation agency for local businesses. CRM systems, workflow automation, and operational infrastructure."
+    status: Production
+    tools: [GoHighLevel, n8n, Hugo, Telegram]
+    gradient: g1
+
+  - title: The Patient Agent
+    category: Business Build
+    description: "Life insurance brand built on patience over pressure. Educational content, systems, and agent training."
+    status: Active Build
+    tools: [GoHighLevel, Skool, Content Systems]
+    gradient: g2
+
+  - title: LeadRecover
+    category: Business Build
+    description: "SMS-first AI lead qualification SaaS for real estate agents. Automated follow-up and conversation routing."
+    status: Concept
+    tools: [Twilio, OpenAI, CRM APIs, n8n]
+    gradient: g3
+
+  - title: The Operator Class
+    category: Business Build
+    description: "Skool community for solo operators learning to build systems, automate workflows, and operate with leverage."
+    status: Concept
+    tools: [Skool, Automation Curriculum]
+    gradient: g4
+
+  # AI Experiments
+  - title: AI Content Repurposing System
+    category: AI Experiment
+    description: "Automated workflow that takes long-form content and repurposes it into social posts, threads, and short clips."
+    status: Prototype
+    tools: [n8n, OpenAI, FFmpeg, APIs]
+    gradient: g1
+
+  - title: Telegram Command Center
+    category: AI Experiment
+    description: "Personal command interface using Telegram bots to trigger workflows, query systems, and receive notifications."
+    status: Implemented
+    tools: [Telegram Bot API, n8n, Python]
+    gradient: g2
+
+  - title: Automated Client Check-in Agent
+    category: AI Experiment
+    description: "AI agent that monitors client project stages and sends personalized check-ins at the right time."
+    status: Prototype
+    tools: [OpenAI, n8n, GoHighLevel]
+    gradient: g3
+
+  - title: Voice-to-Task Workflow
+    category: AI Experiment
+    description: "Speak a task or idea into Telegram, AI transcribes and routes it to the right system—calendar, CRM, or task manager."
+    status: Concept
+    tools: [Whisper AI, Telegram, n8n, APIs]
+    gradient: g4
+
+  # Websites and Platforms
+  - title: clayhuffman.io
+    category: Website
+    description: "Personal brand site showcasing systems work, breathwork audio, writing, and music. Built with Hugo."
+    status: Production
+    tools: [Hugo, Netlify, Custom CSS]
+    gradient: g1
+
+  - title: The Boca Insider
+    category: Website
+    description: "Local content and business directory platform for Boca Raton. Community-driven recommendations and guides."
+    status: Concept
+    tools: [Hugo, Structured Data, SEO]
+    gradient: g2
+
+  - title: Moments by LP Website
+    category: Website
+    description: "Photography portfolio and booking site for Lauren's personal branding and photography business."
+    status: Active Build
+    tools: [Hugo, GoHighLevel Forms, Netlify]
+    gradient: g3
+
+  - title: Client Portal System
+    category: Website
+    description: "Custom client-facing dashboard for project tracking, file delivery, and communication—branded for DAT Media clients."
+    status: Concept
+    tools: [React, APIs, Authentication]
+    gradient: g4
+
+  # Media and Production
+  - title: DAT Media Real Estate Workflow
+    category: Media System
+    description: "Complete photography and video production workflow for real estate agents—capture, editing, delivery, and storage."
+    status: Implemented
+    tools: [Lightroom, Premiere Pro, Google Drive, Workflow Docs]
+    gradient: g1
+
+  - title: Content Archive and Distribution System
+    category: Media System
+    description: "Centralized media library with tagging, search, and automated distribution to social platforms and websites."
+    status: Prototype
+    tools: [Google Drive, APIs, n8n, Metadata Standards]
+    gradient: g2
+
+  - title: Podcast Production Pipeline
+    category: Media System
+    description: "End-to-end workflow for recording, editing, publishing, and repurposing podcast content into multiple formats."
+    status: Concept
+    tools: [Adobe Audition, Descript, RSS, APIs]
+    gradient: g3
+
+  - title: Breathwork Audio Production
+    category: Media System
+    description: "Designed and engineered breathwork audio tracks with timed cues, alpha waves, and ambient music. Available at clayhuffman.io/breathwork."
+    status: Production
+    tools: [Adobe Audition, Sound Design, Binaural Audio]
+    gradient: g4
+
+  # Music and Audio (kept for personal brand depth)
+  - title: Clay & Lauren Original Music
+    category: Music
+    description: "Meditation music, ambient compositions, and original tracks created with Lauren. Instrumental and atmospheric."
+    status: Active Build
+    tools: [Logic Pro, Ableton, Mixing, Mastering]
+    gradient: g1
+
+  - title: Audio Engineering Portfolio
+    category: Music
+    description: "Professional audio engineering work including mixing, mastering, and sound design for artists and creators."
+    status: Production
+    tools: [Pro Tools, Adobe Audition, SAE Institute Training]
+    gradient: g2
+
+  # Writing and Ideas
+  - title: Builder's Notes Blog
+    category: Writing
+    description: "Long-form writing on systems, automation, patience, process improvement, and building a life by design."
+    status: Production
+    tools: [Hugo, Markdown, SEO]
+    gradient: g3
+
+  - title: Systems Design Documentation
+    category: Writing
+    description: "Technical documentation and case studies for implemented systems—workflows, architecture, and lessons learned."
+    status: Active Build
+    tools: [Markdown, Diagrams, Process Maps]
+    gradient: g4
